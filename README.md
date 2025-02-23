@@ -1,122 +1,44 @@
 # HackConnect - Hackathon Management Platform
 
-## Overview
-HackConnect is a comprehensive web application built with React, TypeScript, and Firebase that connects hackathon organizers with participants. It provides a platform for hosting, discovering, and participating in hackathons while facilitating team formation and collaboration.
+# HackConnect
 
-## Features
+HackConnect is a web application that facilitates collaboration among hackathon participants by enabling team formation, idea sharing, and real-time communication. The platform fosters efficient project development and team synergy.
 
-### 1. Authentication System
-- Secure email/password authentication using Firebase Auth
-- Google OAuth integration
-- Protected routes and authenticated access
-- User profile management
-- Session persistence
-- Password reset functionality
+# Features
 
-### 2. Hackathon Management
-- Create and host hackathons
-- Detailed hackathon information:
-  - Title and description
-  - Date and duration
-  - Location (virtual/in-person/hybrid)
-  - Team size limits
-  - Registration deadlines
-  - Prize details
-  - Rules and guidelines
-- Registration tracking
-- Participant management
-- Real-time updates
-- Search and filter capabilities
+- **User Authentication**: Secure registration and login system powered by Firebase.
+- **Team Collaboration**: Allows participants to form teams, share ideas, and work collaboratively.
+- **Chat System**: Real-time chat interface using the @chatscope/chat-ui-kit-react library.
+- **Navigation**: Smooth navigation across Home, Team, Chat, About, and Login pages.
 
-### 3. Team Formation
-- Find teammates feature
-- Skill-based matching
-- Team size configuration
-- Team member management
-- Contact system
-- Profile visibility
-- Experience sharing
-- Interest matching
+# Technology Stack
 
-### 4. User Profiles
-- Customizable user profiles
-- Skill showcase
-- Experience listing
-- Project portfolio
-- Contact information
-- Team preferences
-- Availability status
-- Profile privacy settings
+- **Frontend**: TypeScript, React, Tailwind CSS.
+- **Backend**: Node.js, Express.
+- **Authentication**: Firebase for secure user management.
+- **Development Tools**: Vite for fast frontend development and ts-node for server-side TypeScript execution.
 
-### 5. Registration System
-- Team registration
-- Individual registration
-- Registration validation
-- Team size enforcement
-- Deadline compliance
-- Confirmation system
-- Registration status tracking
-- Team member verification
+# How It Works
 
-### 6. Support System
-- Real-time chat interface
-- Automated responses
-- User support queries
-- Team assistance
-- Quick help access
-- Message history
-- Response tracking
+1. **User Registration and Login**: Users can securely register and log in to access the platform.
+2. **Team Formation**: Users can create or join teams, facilitating idea sharing and collaboration.
+3. **Real-time Chat**: Participants can communicate with their teams using an integrated chat system.
+4. **Navigation**: An intuitive interface with seamless transitions between core features.
 
-## Technical Stack
+# Project Structure
 
-### Frontend
-- React 18
-- TypeScript
-- Tailwind CSS
-- Lucide Icons
-- React Router v6
-- React Hooks
-- Custom Components
+```
+├── index.html          # Main landing page
+├── src/                # Source code directory
+│   ├── main.tsx       # React entry point
+│   ├── components/    # Reusable React components
+│   ├── pages/         # Application pages (Home, Team, Chat)
+│   └── services/      # Firebase and API integrations
+├── server/            # Backend services (Express)
+│   └── index.ts      # Main server entry point
+├── package.json       # Project metadata and scripts
+├── tsconfig.app.json  # TypeScript configuration for frontend
+├── tsconfig.server.json # TypeScript configuration for backend
+└── tailwind.config.js # Tailwind CSS configuration
+```
 
-### Backend (Firebase)
-- Firebase Authentication
-- Cloud Firestore
-- Firebase Security Rules
-- Real-time Database
-- Cloud Functions
-- Firebase Hosting
-
-### Development Tools
-- Vite
-- ESLint
-- Prettier
-- Git
-- npm/yarn
-
-## Project Structure
-
-### Frontend
-- React 18
-- TypeScript
-- Tailwind CSS
-- Lucide Icons
-- React Router v6
-- React Hooks
-- Custom Components
-
-### Backend (Firebase)
-- Firebase Authentication
-- Cloud Firestore
-- Firebase Security Rules
-- Real-time Database
-- Cloud Functions
-- Firebase Hosting
-
-### Development Tools
-- Vite
-- ESLint
-- Prettier
-- Git
-- npm/yarn
-
-## Project Structure 
